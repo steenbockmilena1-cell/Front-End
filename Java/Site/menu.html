@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Menu - Forma Essencial</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo">Forma Essencial</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="sobre.html">Sobre Nós</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="carrinho.html">Carrinho</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Nossas Categorias</h2>
+    <div class="produtos">
+
+      <!-- 🔽 Produto exemplo (troque imagem e descrição conforme necessário) -->
+      <div class="produto" id="anel">
+        <img src="img/anel.jpg" alt="Anel de Ouro">
+        <h3>Anel Elegância</h3>
+        <p>Anel folheado a ouro 18k.</p>
+        <span>R$ 199,90</span>
+        <button onclick="adicionarCarrinho('Anel Elegância',199.90)">Adicionar ao Carrinho</button>
+      </div>
+
+      <div class="produto" id="colar">
+        <img src="img/colar.jpg" alt="Colar de Pérola">
+        <h3>Colar Pérola</h3>
+        <p>Colar delicado com pérola natural.</p>
+        <span>R$ 249,90</span>
+        <button onclick="adicionarCarrinho('Colar Pérola',249.90)">Adicionar ao Carrinho</button>
+      </div>
+
+      <div class="produto" id="pulseira">
+        <img src="img/pulseira.jpg" alt="Pulseira Luxo">
+        <h3>Pulso de Luxo</h3>
+        <p>Pulseira banhada em ouro.</p>
+        <span>R$ 179,90</span>
+        <button onclick="adicionarCarrinho('Pulseira Luxo',179.90)">Adicionar ao Carrinho</button>
+      </div>
+
+      <div class="produto" id="brinco">
+        <img src="img/brinco.jpg" alt="Brinco Cristal">
+        <h3>Brinco Cristal</h3>
+        <p>Brincos com cristais austríacos.</p>
+        <span>R$ 159,90</span>
+        <button onclick="adicionarCarrinho('Brinco Cristal',159.90)">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

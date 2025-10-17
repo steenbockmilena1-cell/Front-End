@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banho e tosa</title>
+</head>
+<body>
+    <p><a href="Index.html">Home</a></p>
+<h1>Banho e tosa</h1>
+
+<h2>Faça seu agendamento com pelo menos 48 horas de antecedência</h2>
+
+<form action="">
+<fieldset>
+   <legend>Identificação do dono do animal</legend>
+    <div>
+        <label for="Nome:">Nome:</label>
+    <input type="text" name="Nome:" id="Nome" placeholder="Digite o nome completo do dono do animal" size="50" maxlength="">
+    
+</div>
+<br>
+<div>
+    <label for="endereco">Endereço:</label>
+    <input type="text"  name="endereco" id="endereco" placeholder="Digite o endereço" size="70" maxlength="">
+</div>
+<br>
+<div>
+    <label for="cep">CEP:</label>
+    <input type="text"  name="cep" id="cep" placeholder="XXXXX-XXX" size="10" maxlength="">
+</div>
+<br>
+<div>
+    <label for="email">Email</label>
+    <input type="email"  name="email" id="email" placeholder="Digite seu endereço de e-mail" size="50" maxlength="">
+</div>
+<br>
+<div>
+    <label for="telcel">Tel/Cel:</label>
+    <input type="tel"  name="telcel" id="telcel" placeholder="99 9999-9999" size="20" maxlength="">
+</div>
+</fieldset>
+
+<br>
+<fieldset>
+<div>
+    <label for="nome">Nome:</label>
+    <input type="tel"  name="nome" id="nome" placeholder="Digite o nome do animal" size="50" maxlength="">
+</div>
+<br>
+<div>
+<label for="porte">Porte do cão:</label>
+
+<input type="radio" name="porte" value="pq" id="pq">
+<label for="pq">Pequeno</label>
+
+<input type="radio" name="porte" value="md" id="md">
+<label for="md">Médio</label>
+
+<input type="radio" name="porte" value="gd" id="gd">
+<label for="gd">Grande</label>
+</div>
+<br>
+<div>
+
+    <label for="tipo_tosa">Tipo tosa:</label>
+    <select name="tipo_tosa" id="tipo_tosa">
+<option value="">Nenhuma</option>
+<option value="padrao">Tosa padrão</option>
+<option value="higienica">Tosa higiênica</option>
+<option value="tesoura">Tosa na tesoura</option>
+<option value="raca">Tosa da raça</option>
+<option value="filhote">Tosa para filhote</option>
+</select>
+
+</div>
+<br>
+<div>
+    <label for="obs">Observação:</label>
+    <br>
+    <textarea name="obs" id="obs" cols="30" rows="3" placeholder="Digite alguma informação sobre o animal"></textarea>
+</div>
+
+</fieldset>
+<fieldset>
+<legend>Horários - (Não atendemos aos domingos e ás sengunda-feira)</legend>
+<div>
+<label for="dias">Indique os dias da semana de sua preferência</label>
+
+<input type="checkbox" name="ter" id="ter">
+<label for="ter">Terça-feira</label>
+
+<input type="checkbox" name="qua" id="qua">
+<label for="qua">Quarta-feira</label>
+
+<input type="checkbox" name="qui" id="qui">
+<label for="qui">Quinta-feira</label>
+
+<input type="checkbox" name="sex" id="sex">
+<label for="sex">Sexta-feira</label>
+
+<input type="checkbox" name="sab" id="sab">
+<label for="sab">Sábado</label>
+</div>
+<br>
+<div>
+
+<label for="hora1">Primeira opção de horário:</label>
+<input type="time" name="hora1" id="hora1">
+
+</div>
+<br>
+<div>
+    <label for="hora2">Segunda opção de horário:</label>
+    <input type="time" name="hora2" id="hora2">
+</div>
+
+</fieldset>
+
+<input type="submit" value="Enviar">
+
+
+</form>
+</body>
+</html>

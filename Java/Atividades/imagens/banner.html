@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+ 
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+ 
+        .navbar li {
+            float: left;
+        }
+ 
+        .navbar li a {
+            display: block;
+            color: rgb(16, 1, 1);
+           text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+ 
+        .navbar li a:hover {
+            background-color: #575757;
+        }
+ 
+        .container {
+            padding: 50px;
+        }
+ 
+        h1 {
+            color: #333;
+        }
+ 
+        .banner {
+            margin-top: 30px;
+        }
+ 
+        .banner img {
+            width: 80%;
+            max-width: 800px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+ 
+ 
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">sobre</a></li>
+            <li><a href="#">serviços</a></li>
+            <li><a href="#">contato</a></li>
+        </ul>
+    </nav>
+ 
+    <div class="container">
+        <h1>Bem-vindo á nossa página!</h1>
+        <div class="banner">
+            <img id="bannerImage" src="banner1.jpg" alt="Banner">
+        </div>
+    </div>
+ 
+
+
+<script>
+     let banners = ["banner1.jpg", "banner2.jpg", "banner3.jpg"];
+        let current = 0;
+        function rotateBanner() {
+            current = (current + 1) % banners.length;
+            document.getElementById("bannerImage").src = banners[current];
+        }
+        setInterval(rotateBanner, 900);
+    
+</script>
+
+
+
+</body>
+ 
+</html>

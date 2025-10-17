@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+<div class="logo">Forma Essencial</div>
+    <img src="img/trabalho.jpg" alt="">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="menu.html">Menu ▼</a>
+          <!-- 🔽 Menu suspenso -->
+          <ul class="dropdown-content">
+            <li><a href="anel.html">Anéis</a></li>
+            <li><a href="colar.html">Colares</a></li>
+            <li><a href="brinco.html">Brincos</a></li>
+          </ul>
+        </li>
+        <li><a href="sobrenos.html">Sobre Nós</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="carrinho.html">Carrinho</a></li>
+      </ul>
+    </nav>
+</head>
+<body>
+     <div class="produto" id="anel">
+        <img src="anel01.jpg" alt="Anel de Ouro">
+        <h3>Anel Elegância</h3>
+        <p>Anel folheado a ouro 18k.</p>
+        <span>R$ 199,90</span>
+        <button onclick="adicionarCarrinho('Anel Elegância',199.90)">Adicionar ao Carrinho</button>
+      </div>
+
+       <div class="produto" id="colar">
+        <img src="img/colar.jpg" alt="Colar de Pérola">
+        <h3>Colar Pérola</h3>
+        <p>Colar delicado com pérola natural.</p>
+        <span>R$ 249,90</span>
+        <button onclick="adicionarCarrinho('Colar Pérola',249.90)">Adicionar ao Carrinho</button>
+      </div>
+</body>
+</html>

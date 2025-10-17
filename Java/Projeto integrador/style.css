@@ -1,0 +1,131 @@
+/* Reset básico */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fdd8d8;
+    /* bege claro */
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-size: 20px;
+
+}
+img{
+    width: 150px;
+   border-radius: 30%;
+
+}
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+p{
+    text-align: center;
+font-size: 30px;
+font: bold;
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header {
+    background-color: #fdebeb;
+    /* bege */
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Navegação */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 45px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Menu suspenso */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: white;
+    border: 1px solid #fab8b8;
+    min-width: 300px;
+   
+    font-size: 30px;
+}
+
+.dropdown-content li {
+    padding: 8px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Banner */
+
+
+.banner {
+    margin-top: 30px;
+    text-align: center;
+  border-radius: 30px;
+
+}
+
+.banner img {
+    width: 80%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Produtos */
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.produto {
+    border: 1px solid #ddd;
+    padding: 10px;
+    background: white;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.produto img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+button {
+    background: #eed7d7;
+    /* bege mais forte */
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #f0c4c4;
+}

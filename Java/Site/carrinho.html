@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Carrinho - Forma Essencial</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo">Forma Essencial</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="sobre.html">Sobre Nós</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="carrinho.html">Carrinho</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Seu Carrinho</h2>
+    <ul id="lista-carrinho"></ul>
+    <h3 id="total"></h3>
+
+    <h2>Finalizar Compra</h2>
+    <form>
+      <input type="text" placeholder="Nome Completo" required><br>
+      <input type="text" placeholder="Endereço" required><br>
+      <select required>
+        <option disabled selected>Forma de Pagamento</option>
+        <option>Cartão de Crédito</option>
+        <option>Boleto</option>
+        <option>Pix</option>
+      </select><br>
+      <button type="submit">Finalizar Compra</button>
+    </form>
+  </main>
+</body>
+</html>
